@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(51, 47, 73);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 34px;
+}
+
+p {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.wrapper{
+    width: 300px;
+}
+
+.ball {
+    display: flex;
+    align-items: center;
+}
+
+.ball img {
+    margin-top: 10px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.message {
+    width: 300px;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 20px;
+    /* text-transform: uppercase; */
+}
+
+.shakeBall {
+    animation: shake 1s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(4px, 4px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-7px, -7px) rotate(1deg);
+    }
+
+    20% {
+        transform: translate(4px, 0px) rotate(-1deg);
+    }
+
+    30% {
+        transform: translate(-4px, 4px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(4px, 4px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-7px, -7px) rotate(0deg);
+    }
+
+    60% {
+        transform: translate(4px, 0px) rotate(-1deg);
+    }
+
+    70% {
+        transform: translate(-4px, 4px) rotate(0deg);
+    }
+
+    80% {
+        transform: translate(4px, 4px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(-7px, -7px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(4px, 0px) rotate(-1deg);
+    }
+}
