@@ -32,7 +32,7 @@ const getMessage = () => {
 ball.addEventListener('click', function () {
     if(!ball.classList.contains('shakeBall')){
         ball.classList.add('shakeBall');  
-        setTimeout(function(){getMessage()}, 1000);
+        setTimeout(getMessage, 1000);
     }
  
     setTimeout(function() {ball.classList.remove('shakeBall')}, 1000);
